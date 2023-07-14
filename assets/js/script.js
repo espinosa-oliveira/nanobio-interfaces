@@ -8,3 +8,13 @@ function menuShow() {
         document.querySelector('.icon').src = "assets/img/menu_white_36dp.svg"
     }
 }
+
+let contador = 1;
+setInterval(function(){
+    document.getElementById('slide' + contador).checked = true;
+    contador ++;
+
+    if(contador > 2){
+        contador = 1;
+    }
+}, 3000)
